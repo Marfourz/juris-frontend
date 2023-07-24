@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @layer base {
+    body{
+      @apply bg-white dark:bg-slate-800 text-slate-800 dark:text-white
+    }
+
+    h1{
+        @apply text-2xl font-bold
+    }
+
+    a{
+        @apply text-primary font-bold underline
+    }
+  } */
+
+
+
+
+@layer components{
+    link{
+        @apply text-primary font-bold underline
+    }
+}
+  
