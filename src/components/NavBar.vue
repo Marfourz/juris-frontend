@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#F1F1F1]   border-r border-semiBlack py-4">
+    <div class="bg-[#F1F1F1] dark:bg-black  border-r border-semiBlack py-4">
         
         <div class="bg-gray-200 flex items-center space-x-4 rounded-xl mx-4 px-4 py-3">
             <BaseCircle :value="usersStore.getInitial"></BaseCircle>
