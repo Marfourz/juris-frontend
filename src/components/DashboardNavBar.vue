@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#F1F1F1] border-r border-semiBlack">
-    <div class="h-12 bg-primary flex items-center justify-center text-white" @click="goToChat">
+    <div class="h-12 bg-primary flex items-center justify-center text-white cursor-pointer" @click="goToChat">
       RETOUR AU CHATBOT
     </div>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2 gap-10 ">
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-10 ">
         <div class="rounded-2xl flex justify-center items-center bg-[#F9F9F9]" v-for="info in infos">
             <div class="flex space-x-10 items-center">
                 <div class="bg-[#F4F7FE] h-16 w-16 rounded-full flex justify-center items-center ">

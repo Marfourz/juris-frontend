@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-6 py-10 px-20 bg-[#F9F9F9]">
+  <div class="flex space-x-6 py-10 md:px-20 px-6 bg-[#F9F9F9]">
     <div><img src="@/assets/images/logo.png" alt="" /></div>
     <div class="flex-1 pt-2">
       <div class="loader">

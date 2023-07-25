@@ -1,8 +1,8 @@
 <template>
     <div class="h-screen w-screen flex overflow-hidden">   
-        <DashboardNavBar class="w-[25%]"></DashboardNavBar>
-        <div class="flex-1 flex flex-col p-12 space-y-20">
-            <div class="text-4xl font-bold">{{ title }}</div>
+        <DashboardNavBar class="md:w-[25%] hidden md:block"></DashboardNavBar>
+        <div class="flex-1 flex flex-col space-y-20" :class="{' p-12': title}">
+            <div class="text-4xl font-bold" v-if="title">{{ title }} </div>
             <RouterView class="flex-1"></RouterView>
         </div>
         

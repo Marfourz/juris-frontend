@@ -16,7 +16,8 @@ export interface User {
     password: string,
     role : UserRole,
     online : boolean,
-    lastMessage : string
+    lastMessage : string,
+    isAdmin : boolean
 }
 
 export enum UserRole{

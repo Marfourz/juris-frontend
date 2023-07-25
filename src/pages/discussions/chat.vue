@@ -5,7 +5,7 @@
       <Typing v-if="loadingMessage" ref="typing"></Typing>
     </div>
 
-    <div class="w-full pb-10 px-20 pt-4 shadow">
+    <div class="w-full pb-10 md:px-20 px-8 pt-4 shadow" v-if="!isAdmin">
       <SearchInput @search="onSendMessage" :readonly="loadingMessage"></SearchInput>
     </div>
   </div>
@@ -33,6 +33,10 @@ const loadingMessage = ref(false)
 const discussionId = computed(() => {
   return route.params.id;
 });
+
+const isAdmin = computed(()=>{
+  return route.meta.admin
+})
 
 
 const toast = useToast()

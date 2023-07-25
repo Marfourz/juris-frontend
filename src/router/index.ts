@@ -58,6 +58,9 @@ const router = createRouter({
     {
       component : DashboardLayout,
       path:"/dashboard",
+      meta:{
+        admin: true
+      },
       children:[
         {
           path: "",
@@ -82,6 +85,11 @@ const router = createRouter({
           meta:{
             title:"Utilisateurs"
           }
+        },
+        {
+          path: "discussions/:id",
+          component: Chat,
+          name: "chatDetail"
         }
       ]
 

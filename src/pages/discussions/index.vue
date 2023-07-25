@@ -1,6 +1,6 @@
 <template>
-  <div class="flex w-full items-center justify-center py-20">
-    <div class="w-[70%] flex justify-between flex-col items-center h-full">
+  <div class="flex w-full items-center justify-center py-20 md:px-0 px-4">
+    <div class="md:w-[70%] flex justify-between flex-col items-center h-full">
       <div class="flex flex-col items-center space-y-10 w-full">
         <img src="@/assets/images/logo.png" alt="" class="w-28 h-28" />
 
@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <div class="flex justify-between items-center">
+      <div class="flex md:flex-row flex-col  justify-between items-center pt-8">
         <FeatureCard
           v-for="feature in features"
           :icon="feature.icon"
