@@ -4,7 +4,7 @@
             <BaseInput placeholder="Nom" name="Nom" v-model="data.lastname" rules="required"></BaseInput>
             <BaseInput placeholder="Prénom(s)" name="Prenom" v-model="data.firstname" rules="required"></BaseInput>
             <BaseInput placeholder="Adresse mail" name="Email" v-model="data.email" rules="required"></BaseInput>
-            <BaseInput placeholder="Mot de passe" name="password" v-model="data.password" rules="required"></BaseInput>
+            <BaseInput placeholder="Mot de passe" name="password" type="password" v-model="data.password" rules="required"></BaseInput>
             <BaseButton type="submit" :loading="loading" :expand="true">S'inscrire</BaseButton>
             <div class="flex justify-center" >
                 <a href="" @click.prevent="goToLogin">Se connecter</a>

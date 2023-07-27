@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-[#F1F1F1] dark:bg-black  border-r border-semiBlack py-4">
+    <div class="bg-[#F1F1F1] dark:bg-[rgb(32,33,36)]  border-r border-semiBlack py-4">
         
-        <div class="bg-gray-200 flex items-center space-x-4 rounded-xl mx-4 px-4 py-3">
+        <div class="bg-gray-200 dark:bg-dark flex items-center space-x-4 rounded-xl mx-4 px-4 py-3">
             <BaseCircle :value="usersStore.getInitial"></BaseCircle>
             <div>{{ usersStore.getFullname }}</div>
         </div>
@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="px-4">
-            <BaseButton icon="plus" expand @click="router.push({name:'welcome'})">Nouvel discussion</BaseButton>
+            <BaseButton icon="plus" expand @click="router.push({name:'welcome'})">Nouvelle discussion</BaseButton>
         </div>
     </div>
 </template>

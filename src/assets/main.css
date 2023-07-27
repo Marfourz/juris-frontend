@@ -5,7 +5,7 @@
 
 @layer base {
     body{
-      @apply bg-white dark:bg-slate-800 text-slate-800 dark:text-white
+      @apply bg-white dark:bg-dark text-slate-800 dark:text-white
     }
 
     h1{

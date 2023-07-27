@@ -49,7 +49,7 @@
 
       <div
         v-else
-        class="flex items-center outiline-none p-2 focus:shadow-outline rounded-lg border focus:outline-none space-x-2 appearance-none bg-[#E3E2E6]"
+        class="flex items-center outiline-none p-2 focus:shadow-outline rounded-lg border focus:outline-none space-x-2 appearance-none bg-[#E3E2E6] dark:bg-dark"
         :class="{
           'border-borderColor': errors.length == 0,
           'border-danger bg-fadeDanger':
