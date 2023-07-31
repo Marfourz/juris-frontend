@@ -62,7 +62,7 @@
           :type="inputType"
           ref="input"
           :class="[
-            'outiline-0 text-gray-700  focus:shadow-outline bg-transparent focus:outline-none w-full',
+            'outiline-0 text-gray-700 dark:text-white  focus:shadow-outline bg-transparent focus:outline-none w-full',
             errors.length === 0 ?? 'bg-fadeDanger',
           ]"
         />
@@ -76,11 +76,11 @@
 
       <div
         v-if="errors.length != 0 || customErrorMessage"
-        class="flex items-center space-x-1 py-1 text-sm  rounded-lg bg-[#FEEFEF]  px-4 mt-2"
+        class="flex items-center space-x-1 py-1 text-sm  rounded-lg bg-[#FEEFEF] dark:bg-red-100  px-4 mt-2"
       >
         <IconInfoPlus class="text-red-900"/>
 
-        <div class="text-danger" v-if="errors.length != 0">
+        <div class="text-danger dark:text-black" v-if="errors.length != 0">
           {{ errorMessage }}
         </div>
         <div class="text-danger" v-else>{{ customErrorMessage }}</div>
